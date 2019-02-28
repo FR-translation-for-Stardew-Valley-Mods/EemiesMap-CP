@@ -1,0 +1,708 @@
+{
+	"Format": "1.6",
+
+	"ConfigSchema": {
+
+		"Spring": {
+			"AllowValues": "Green, Pink"
+			},
+		"Fall": {
+			"AllowValues": "Green, Orange"
+			},
+		"UseEemieGrass": {
+			"AllowValues": "true, false"
+			},
+		"ExpandedMaps": {
+			"AllowValues": "false, true"
+			},
+		"AliGrass": {
+			"AllowValues": "None, Eemie, Vibrant, Normal, Alternate, AlternateVibrant"
+			},
+		"UseWorldMapRecolor": {
+			"AllowValues": "true, false"
+		},
+	},
+
+	"Changes": [
+
+		//Cursors - same for all versions
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/Cursors.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 704, "Height": 2256 },
+		"Enabled": true
+		},
+
+		//Dirt - same for all versions
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "TerrainFeatures/hoeDirt",
+		"FromFile": "assets/hoeDirt.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 64 },
+		"Enabled": true
+		},
+
+		//Summer - same for all versions
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "summer_outdoorsTileSheet",
+		"FromFile": "assets/summer_outdoorsTileSheet.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 400, "Height": 1264 },
+		"Enabled": true
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/summer_outdoorsTileSheet",
+		"FromFile": "assets/summer_outdoorsTileSheet.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 400, "Height": 1264 },
+		"Enabled": true
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "summer_outdoorsTileSheet",
+		"FromFile": "assets/summer_outdoorsTileSheet_trees.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 208, "Height": 96 },
+		"Enabled": true
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Maps/summer_outdoorsTileSheet",
+		"FromFile": "assets/summer_outdoorsTileSheet_trees.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 208, "Height": 96 },
+		"Enabled": true
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/summer_town",
+		"FromFile": "assets/summer_town.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 512, "Height": 992 },
+		"Enabled": true
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree1_summer",
+		"FromFile": "assets/tree1_summer.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 160 },
+		"Enabled": true
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree2_summer",
+		"FromFile": "assets/tree2_summer.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 160 },
+		"Enabled": true
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree3_summer",
+		"FromFile": "assets/tree3_summer.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 160 },
+		"Enabled": true
+		},
+
+		//Winter - same for all versions
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "winter_outdoorsTileSheet",
+		"FromFile": "assets/winter_outdoorsTileSheet.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 400, "Height": 1264 },
+		"Enabled": true
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/winter_outdoorsTileSheet",
+		"FromFile": "assets/winter_outdoorsTileSheet.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 400, "Height": 1264 },
+		"Enabled": true
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "winter_outdoorsTileSheet",
+		"FromFile": "assets/winter_outdoorsTileSheet_trees.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 208, "Height": 96 },
+		"Enabled": true
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Maps/winter_outdoorsTileSheet",
+		"FromFile": "assets/winter_outdoorsTileSheet_trees.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 208, "Height": 96 },
+		"Enabled": true
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree1_winter",
+		"FromFile": "assets/tree1_winter.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 160 },
+		"Enabled": true
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree2_winter",
+		"FromFile": "assets/tree2_winter.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 160 },
+		"Enabled": true
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree3_winter",
+		"FromFile": "assets/tree3_winter.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 160 },
+		"Enabled": true
+		},
+
+		//Pink Spring
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "spring_outdoorsTileSheet",
+		"FromFile": "assets/spring_outdoorsTileSheet_pink.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 400, "Height": 1264 },
+		"When": {
+			"Spring": "Pink"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/spring_outdoorsTileSheet",
+		"FromFile": "assets/spring_outdoorsTileSheet_pink.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 400, "Height": 1264 },
+		"When": {
+			"Spring": "Pink"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "spring_outdoorsTileSheet",
+		"FromFile": "assets/spring_outdoorsTileSheet_pinktrees.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 208, "Height": 96 },
+		"When": {
+			"Spring": "Pink"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Maps/spring_outdoorsTileSheet",
+		"FromFile": "assets/spring_outdoorsTileSheet_pinktrees.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 208, "Height": 96 },
+		"When": {
+			"Spring": "Pink"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "spring_town",
+		"FromFile": "assets/spring_town_pink.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 512, "Height": 992 },
+		"When": {
+			"Spring": "Pink"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/spring_town",
+		"FromFile": "assets/spring_town_pink.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 512, "Height": 992 },
+		"When": {
+			"Spring": "Pink"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree1_spring",
+		"FromFile": "assets/tree1_spring_pink.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 160 },
+		"When": {
+			"Spring": "Pink"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree2_spring",
+		"FromFile": "assets/tree2_spring_pink.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 160 },
+		"When": {
+			"Spring": "Pink"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree3_spring",
+		"FromFile": "assets/tree3_spring_pink.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 160 },
+		"When": {
+			"Spring": "Pink"
+			}
+		},
+
+		//Green Spring
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "spring_outdoorsTileSheet",
+		"FromFile": "assets/spring_outdoorsTileSheet_green.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 400, "Height": 1264 },
+		"When": {
+			"Spring": "Green"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/spring_outdoorsTileSheet",
+		"FromFile": "assets/spring_outdoorsTileSheet_green.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 400, "Height": 1264 },
+		"When": {
+			"Spring": "Green"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "spring_outdoorsTileSheet",
+		"FromFile": "assets/spring_outdoorsTileSheet_greentrees.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 208, "Height": 96 },
+		"When": {
+			"Spring": "Green"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Maps/spring_outdoorsTileSheet",
+		"FromFile": "assets/spring_outdoorsTileSheet_greentrees.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 208, "Height": 96 },
+		"When": {
+			"Spring": "Green"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "spring_town",
+		"FromFile": "assets/spring_town_green.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 512, "Height": 992 },
+		"When": {
+			"Spring": "Green"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/spring_town",
+		"FromFile": "assets/spring_town_green.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 512, "Height": 992 },
+		"When": {
+			"Spring": "Green"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree1_spring",
+		"FromFile": "assets/tree1_spring_green.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 160 },
+		"When": {
+			"Spring": "Green"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree2_spring",
+		"FromFile": "assets/tree2_spring_green.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 160 },
+		"When": {
+			"Spring": "Green"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree3_spring",
+		"FromFile": "assets/tree3_spring_green.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 160 },
+		"When": {
+			"Spring": "Green"
+			}
+		},
+
+		//Green Fall
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "fall_outdoorsTileSheet",
+		"FromFile": "assets/fall_outdoorsTileSheet_green.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 400, "Height": 1264 },
+		"When": {
+			"Fall": "Green"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_outdoorsTileSheet",
+		"FromFile": "assets/fall_outdoorsTileSheet_green.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 400, "Height": 1264 },
+		"When": {
+			"Fall": "Green"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "fall_outdoorsTileSheet",
+		"FromFile": "assets/fall_outdoorsTileSheet_greentrees.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 208, "Height": 96 },
+		"When": {
+			"Fall": "Green"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Maps/fall_outdoorsTileSheet",
+		"FromFile": "assets/fall_outdoorsTileSheet_greentrees.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 208, "Height": 96 },
+		"When": {
+			"Fall": "Green"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "fall_town",
+		"FromFile": "assets/fall_town_green.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 512, "Height": 992 },
+		"When": {
+			"Fall": "Green"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_town",
+		"FromFile": "assets/fall_town_green.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 512, "Height": 992 },
+		"When": {
+			"Fall": "Green"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree1_fall",
+		"FromFile": "assets/tree1_fall_green.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 160 },
+		"When": {
+			"Fall": "Green"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree2_fall",
+		"FromFile": "assets/tree2_fall_green.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 160 },
+		"When": {
+			"Fall": "Green"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree3_fall",
+		"FromFile": "assets/tree3_fall_green.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 160 },
+		"When": {
+			"Fall": "Green"
+			}
+		},
+
+		//Orange Fall
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "fall_outdoorsTileSheet",
+		"FromFile": "assets/fall_outdoorsTileSheet_orange.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 400, "Height": 1264 },
+		"When": {
+			"Fall": "Orange"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_outdoorsTileSheet",
+		"FromFile": "assets/fall_outdoorsTileSheet_orange.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 400, "Height": 1264 },
+		"When": {
+			"Fall": "Orange"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "fall_outdoorsTileSheet",
+		"FromFile": "assets/fall_outdoorsTileSheet_orangetrees.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 208, "Height": 96 },
+		"When": {
+			"Fall": "Orange"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Maps/fall_outdoorsTileSheet",
+		"FromFile": "assets/fall_outdoorsTileSheet_orangetrees.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 208, "Height": 96 },
+		"When": {
+			"Fall": "Orange"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "fall_town",
+		"FromFile": "assets/fall_town_orange.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 512, "Height": 992 },
+		"When": {
+			"Fall": "Orange"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_town",
+		"FromFile": "assets/fall_town_orange.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 512, "Height": 992 },
+		"When": {
+			"Fall": "Orange"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree1_fall",
+		"FromFile": "assets/tree1_fall_orange.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 160 },
+		"When": {
+			"Fall": "Orange"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree2_fall",
+		"FromFile": "assets/tree2_fall_orange.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 160 },
+		"When": {
+			"Fall": "Orange"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/tree3_fall",
+		"FromFile": "assets/tree3_fall_orange.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 160 },
+		"When": {
+			"Fall": "Orange"
+			}
+		},
+
+		//Bushes
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "TileSheets/bushes",
+		"FromFile": "assets/bushes_standard.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 256 },
+		"When": {
+			"Season": "spring, summer"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "TileSheets/bushes",
+		"FromFile": "assets/bushes_fall.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 256 },
+		"When": {
+			"Season": "fall"
+			}
+		},
+
+		//Grass
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/grass",
+		"FromFile": "assets/grass.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 66, "Height": 120 },
+		"When": {
+			"UseEemieGrass": "true"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/grass",
+		"FromFile": "assets/ali_grass_eemie.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 66, "Height": 120 },
+		"When": {
+			"AliGrass": "Eemie"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/grass",
+		"FromFile": "assets/ali_grass_vibrant.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 66, "Height": 120 },
+		"When": {
+			"AliGrass": "Vibrant"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/grass",
+		"FromFile": "assets/ali_grass.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 66, "Height": 120 },
+		"When": {
+			"AliGrass": "Normal"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/grass",
+		"FromFile": "assets/ali_grass_alternate.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 66, "Height": 120 },
+		"When": {
+			"AliGrass": "Alternate"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "TerrainFeatures/grass",
+		"FromFile": "assets/ali_grass_alternatevibrant.png",
+		"ToArea": { "X": 0, "Y": 0, "Width": 66, "Height": 120 },
+		"When": {
+			"AliGrass": "AlternateVibrant"
+			}
+		},
+
+		//Expanded Maps
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "{{season}}_ladder",
+		"FromFile": "assets/{{season}}_ladder.png",
+		"When": {
+			"ExpandedMaps": "true"
+			}
+		},
+
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Maps/{{season}}_ladder",
+		"FromFile": "assets/{{season}}_ladder.png",
+		"When": {
+			"ExpandedMaps": "true"
+			}
+		},
+
+		//World Map
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "LooseSprites/map",
+		"FromFile": "assets/map.png",
+		"When": {
+			"UseWorldMapRecolor": "true",
+			"HasMod:Bouhm.NPCMapLocations": "false",
+			},
+		},
+	]
+}
