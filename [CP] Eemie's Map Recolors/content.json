@@ -541,6 +541,44 @@
 			}
 		},
 
+		//Small Beach Farm
+
+		{
+		"LogName": "Small Beach Farm Compat - Summer/Winter",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Mods/Pathoschild.SmallBeachFarm/{{season}}_smallBeachFarm",
+		"FromFile": "assets/smallBeachCompat/{{season}}_smallBeachFarm.png",
+		"When": {
+			"HasMod:Pathoschild.SmallBeachFarm": true,
+			"season": "summer, winter"
+			}
+		},
+
+		{
+		"LogName": "Small Beach Farm Compat - Spring",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Mods/Pathoschild.SmallBeachFarm/{{season}}_smallBeachFarm",
+		"FromFile": "assets/smallBeachCompat/{{season}}_smallBeachFarm_{{SpringColor}}.png",
+		"When": {
+			"HasMod:Pathoschild.SmallBeachFarm": true,
+			"season": "spring"
+			}
+		},
+
+		{
+		"LogName": "Small Beach Farm Compat - Fall",
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Mods/Pathoschild.SmallBeachFarm/{{season}}_smallBeachFarm",
+		"FromFile": "assets/smallBeachCompat/{{season}}_smallBeachFarm_{{FallColor}}.png",
+		"When": {
+			"HasMod:Pathoschild.SmallBeachFarm": true,
+			"season": "fall"
+			}
+		},
+
 		//World Map
 		{
 		"LogName": "World Map Not Spring",

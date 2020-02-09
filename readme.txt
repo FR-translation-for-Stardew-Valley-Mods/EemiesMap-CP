@@ -1,4 +1,4 @@
-Eemie's Just A New Map Recolour (Content Patcher Edition) - Version 1.6.0
+Eemie's Just A New Map Recolour (Content Patcher Edition) - Version 1.7.0
 An official conversion of Eemie's map recolor for Content Patcher.
 
 :: Required Mods::
